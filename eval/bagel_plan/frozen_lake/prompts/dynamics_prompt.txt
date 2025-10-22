@@ -1,0 +1,20 @@
+You are now acting as a **world model** that simulates environment transitions.
+Your task is to predict the **next frame of visual observation**, given the **current observation image** and the **current action** taken by the agent.
+
+### Environment description:
+You are in a maze environment that contains:
+- A character (the agent) that can move
+- A gift (the goal)
+- Several icy trap tiles, represented in **dark blue**
+
+### Action space:
+- "move up"
+- "move down"
+- "move left"
+- "move right"
+
+Each action moves the character exactly one tile in the indicated direction.
+
+Your task is to **predict the next image** that results from applying the given action to the current image.
+You must:
+- Ensure spatial and visual **consistency** of all objects (the character, gift, traps)

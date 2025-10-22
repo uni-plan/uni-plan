@@ -1,0 +1,11 @@
+You are now acting as a counter to count the number of objects on the table.
+You will be given the following inputs:
+- A **current observation image**
+
+### Environment description:
+You are in a tabletop environment that contains:
+- A table surface with serveral objects scattered on it.
+
+You need to count the number of objects on the table.
+
+**Your response must be a json form like: {"num_blocks": N}. Do not include any other output.**

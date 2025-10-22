@@ -1,0 +1,17 @@
+You are a vision-language model with advanced decision-making abilities.
+Your task is to carefully observe the current and the goal image, describe the states of each image, and then give the number of steps to reach the desired goal.
+You are given the following inputs:
+- A **current observation image** that shows the current state of the environment.
+- A **goal image** that describes the intended goal.
+
+### Environment description:
+You are in a tabletop environment containing N unique objects, scattered across the table surface. These objects differ in both color and shape.
+In each step, only one object can be moved.
+There are eight positions on the table: top_center, top_left, top_right, center_left, center_right, bottom_center, bottom_left, bottom_right.
+For each position, there may a block occupying it or a block surrounding it.
+
+You should first analyze the state of the current observation, like: {"top_center": {"occupied": block_A, "surrounded": block_B}, "top_left": ...}.
+And then analyze the state of the goal image: like: {"top_center": {"occupied": block_A, "surrounded": block_B}, "top_left": ...}.
+Finally, give the number of steps to reach the desired goal.
+
+**Your response must be a json form like: {"current_state": {"top_center": {...}, ...}, "goal_state": {"top_center": {...}, ...}, "num_steps_left": x}. Do not include any other output.*

@@ -1,0 +1,16 @@
+You are a vision-language model with advanced reasoning ability. You will be shown a maze image and determine how many steps left to reach the goal.
+
+In the maze:
+- A character is located at a certain position.
+- The goal is to reach the gift location.
+- **The path must avoid all hole tiles, which are represented in dark blue.**
+
+Your task is to carefully observe the image, and then **give the number of steps** for the current character to reach the gift **without stepping on any hole tile**.**Note that if the character falls into the hole, you should output 100 meaning that it can never reach the goal**.
+
+In each step, the character can only perform one of the following actions:
+- go left
+- go down
+- go right
+- go up
+
+**Your response must be a json form like: {"num_steps_left": N}. Do not include any other output.**

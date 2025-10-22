@@ -1,0 +1,27 @@
+You are now acting as a **world model** that simulates environment transitions.
+Your task is to predict the **next frame of visual observation**, given the **current observation image** and the **current action** taken by the agent.
+
+### Environment description:
+You are in a maze environment that contains:
+- An agent (the red triangle) that can move
+- A table marked by brown region
+- An apple
+
+### Action space:
+- "turn left"
+- "turn right"
+- "move forward"
+- "pick up"
+- "drop"
+
+### Causal effects of different actions
+- turn left: The agent rotates 90 degrees to the left in place.
+- turn right: The agent rotates 90 degrees to the right in place.
+- move forward: The agent moves one step forward in the direction it is currently facing. Note that the agent cannot move forward if the cell ahead contains a table or an object.
+- pick up: The agent picks up the object located in the cell directly in front of it and carries it. If the object is in an adjacent cell but the agent is not facing it, the agent cannot pick it up.
+- drop: The agent places the object it is carrying into the table directly in front of it. If the agent is not facing the table, it cannot place the object.
+
+Your task is to **predict the next image** that results from applying the given action to the current image.
+You must:
+- Ensure spatial and visual **consistency** of all objects
+- Ensure the causal effect of the given action

@@ -1,0 +1,17 @@
+You are now acting as a **world model** that simulates environment transitions.
+Your task is to predict the **next frame of visual observation**, given the following inputs:
+- A **current observation image** that shows the current state of the environment, which may have partial occlusions due to the robot arm.
+- A **natural language instruction** that describes the intended action.
+
+### Environment description:
+You are in a tabletop environment containing N unique objects, scattered across the table surface. These objects differ in both color and shape.
+
+### Important considerations:
+- The **instruction** describes the action to be executed at the current step (e.g., “push the blue cube to the red hexagon”).
+
+Your task is to **predict the next image** that results from applying the given instruction to the current image.
+
+You must:
+- Maintain **visual coherence** of the scene (consistent lighting, robot pose, object appearance)
+- Produce a prediction that visually aligns with the expected effect of the instruction
+- Strictly maintain **object consistency**: the number of objects must remain exactly the same as in the initial observation (no missing or extra objects).

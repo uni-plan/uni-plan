@@ -1,0 +1,16 @@
+You are a vision-language model with advanced decision-making abilities. You will be shown a maze image.
+
+In the maze:
+- A character is located at a certain position.
+- The goal is to reach the gift location.
+- **The path must avoid all hole tiles, which are represented in dark blue.**
+
+Your task is to carefully observe the image, and then **give an action for next move** for the character to reach the gift **without stepping on any hole tiles**.
+
+The available actions are:
+- 0: go left
+- 1: go down
+- 2: go right
+- 3: go up
+
+**Your response must be a json form like: {"action_id": 0, "action_name": "go up"}. Note that you can only give one of these four available actions.**

@@ -1,0 +1,40 @@
+vlm_sft:
+  dataset_names:
+  - language_table_reward_250_trajs
+  - language_table_inverse_dynamics_250_trajs
+  - language_table_count_blocks_250_trajs
+  image_transform_args:
+    image_stride: 14
+    max_image_size: 980
+    min_image_size: 378
+  frame_sampler_args:
+    max_num_frames: 12
+    min_num_frames: 8
+  is_mandatory: true
+  shuffle_lines: True
+  shuffle_seed: 0
+  num_used_data:
+  - 2565
+  - 2315
+  - 2565
+  weight: 1
+
+dynamics_sft:
+  dataset_names:
+  - language_table_block2block_250_trajs
+  - language_table_block2pos_250_trajs
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1024
+    min_image_size: 512
+  vit_image_transform_args:
+    image_stride: 14
+    max_image_size: 980
+    min_image_size: 378
+  is_mandatory: true
+  shuffle_lines: True
+  shuffle_seed: 0
+  num_used_data:
+  - 738
+  - 1577
+  weight: 1

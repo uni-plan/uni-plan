@@ -1,0 +1,34 @@
+vlm_sft:
+  dataset_names:
+  - mini_behavior_reward_500_trajs
+  image_transform_args:
+    image_stride: 14
+    max_image_size: 980
+    min_image_size: 378
+  frame_sampler_args:
+    max_num_frames: 12
+    min_num_frames: 8
+  is_mandatory: true
+  shuffle_lines: True
+  shuffle_seed: 0
+  num_used_data:
+  - 14390
+  weight: 1
+
+dynamics_sft:
+  dataset_names:
+  - mini_behavior_500_trajs
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1024
+    min_image_size: 512
+  vit_image_transform_args:
+    image_stride: 14
+    max_image_size: 980
+    min_image_size: 378
+  is_mandatory: true
+  shuffle_lines: True
+  shuffle_seed: 0
+  num_used_data:
+  - 3940
+  weight: 1

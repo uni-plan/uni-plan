@@ -1,0 +1,10 @@
+You are now acting as an inverse dynamics to inference the action between two images.
+You will be given the following inputs:
+- A **current observation image**
+- A **next observation image**
+
+### Environment description:
+You are in a tabletop environment containing N unique objects, scattered across the table surface. These objects differ in both color and shape.
+
+You need to describes what happened between the two images. Your output should be like:
+**move {object A} to {object B / some position}. Do not include any other output.**
