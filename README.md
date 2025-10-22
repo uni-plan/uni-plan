@@ -1,7 +1,7 @@
 <p align="center"><img src="assets/logo.png" width="50%"></p>
 
 # Planning with Unified Multimodal Models
-<a href='https://uni-plan.github.io/'><img src='https://img.shields.io/badge/UniPlan-Website-blue'></a><a href='https://arxiv.org/abs/2509.23014'><img src='https://img.shields.io/badge/UniPlan-Paper-red?logo=arxiv'></a><a href='https://huggingface.co/collections/tobealegend/uni-plan'><img src='https://img.shields.io/badge/UniPlan-Model-yellow?logo=huggingface'></a>
+<a href='https://uni-plan.github.io/'><img src='https://img.shields.io/badge/UniPlan-Website-blue'></a>&emsp; <a href='https://arxiv.org/abs/2509.23014'><img src='https://img.shields.io/badge/UniPlan-Paper-red?logo=arxiv'></a>&emsp; <a href='https://huggingface.co/collections/tobealegend/uni-plan'><img src='https://img.shields.io/badge/UniPlan-Model-yellow?logo=huggingface'></a>
 
 > [Yihao Sun](https://www.yihaosun.cn/)<sup>1,2</sup>, [Zhilong Zhang](https://www.lamda.nju.edu.cn/zhangzl/)<sup>3</sup>, [Yang Yu](https://www.wolai.com/eyounx/dtR1MTyRXS5tP5Cex4KtdK)<sup>3</sup>, [Pierre-Luc Bacon](https://pierrelucbacon.com/)<sup>1,2</sup>
 >
