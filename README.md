@@ -32,6 +32,23 @@ pip install -r requirements.txt
 pip install flash_attn==2.5.8 --no-build-isolation
 ```
 
+If you encounter any compilation errors when installing `flash_attn`, you can install a precompiled wheel instead of building from source.
+
+1. Go to the official release page:  
+   **https://github.com/Dao-AILab/flash-attention/releases**
+
+2. Download the wheel that matches your environment, typically:
+   - **CUDA 12.4**
+   - **PyTorch 2.5**
+   - **Python 3.10 (cp310)**
+
+3. After downloading the wheel, install it with:
+
+   ```bash
+   pip install <wheel_file>
+   ```
+
+
 ### Model Download
 
 You can download the huggingface [checkpoint](https://huggingface.co/collections/tobealegend/uni-plan) or use the following script:
